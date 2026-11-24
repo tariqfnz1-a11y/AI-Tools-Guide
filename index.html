@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Interactive guide to free AI tools: who can use them, what they produce, and typical free-tier limits across 11 categories.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free AI Tools Guide 2026">
+<meta property="og:description" content="Pick your role and see which free AI tools fit, what they make, and where the free limits stop.">
+<meta property="og:image" content="https://tariqfnz1-a11y.github.io/free-ai-tools-guide/cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tariqfnz1-a11y.github.io/free-ai-tools-guide/cover.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B0%3C/text%3E%3C/svg%3E">
+<title>Free AI Tools Guide 2026: Who Can Use Them, Outputs and Limits</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f4;--surface:#fff;--ink:#1b2430;--muted:#5b6673;--line:#d9ddd5;--accent:#1f5f8b;--accent-ink:#fff;--sun:#f2b632;--sun-ink:#3a2a00;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12171d;--surface:#1a222b;--ink:#e8ecef;--muted:#9aa5b1;--line:#2b3641;--accent:#6bb2e0;--accent-ink:#0b1620;--sun:#f2b632;--sun-ink:#2a1e00;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12171d;--surface:#1a222b;--ink:#e8ecef;--muted:#9aa5b1;--line:#2b3641;--accent:#6bb2e0;--accent-ink:#0b1620;--sun:#f2b632;--sun-ink:#2a1e00;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:28px 18px 56px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.05;margin:0 0 12px;font-weight:800;letter-spacing:-.02em}
+.cover{display:block;width:100%;height:auto;border-radius:12px;margin-bottom:22px}
+.lede{color:var(--muted);max-width:60ch;margin:0 0 22px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:16px}
+label.q{display:block;font-weight:600;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;border:1px solid var(--line);background:transparent;color:var(--ink);padding:7px 13px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+input[type=search]{width:100%;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);margin-top:12px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.count{color:var(--muted);margin:6px 2px 12px;font-size:.95rem}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.item button.head{all:unset;box-sizing:border-box;display:flex;gap:12px;align-items:center;justify-content:space-between;width:100%;padding:14px 16px;cursor:pointer}
+.item button.head:focus-visible{outline:3px solid var(--sun);outline-offset:-3px}
+.name{font-weight:800;font-size:1.1rem}
+.tools{color:var(--muted);font-size:.92rem;margin-top:2px}
+.plus{flex:none;width:26px;height:26px;border-radius:50%;background:var(--sun);color:var(--sun-ink);display:grid;place-items:center;font-weight:800;transition:transform .2s}
+.item.open .plus{transform:rotate(45deg)}
+.body{display:none;padding:0 16px 16px;border-top:1px solid var(--line)}
+.item.open .body{display:block}
+dl{margin:12px 0 0;display:grid;gap:10px}
+dt{font-weight:600}
+dd{margin:2px 0 0;color:var(--muted)}
+.lim dd{color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.links a{display:inline-block;padding:6px 12px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600;font-size:.92rem}
+.links a:hover{background:var(--accent);color:var(--accent-ink)}
+.links a::after{content:" \2197";font-weight:400}
+.empty{padding:22px;text-align:center;color:var(--muted)}
+.note{font-size:.9rem;color:var(--muted);margin-top:20px}
+.share{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{font:inherit;font-weight:600;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;text-decoration:none;background:var(--accent);color:var(--accent-ink)}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){.plus{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<img class="cover" src="cover.svg" width="1200" height="630" alt="Free AI Tools Guide 2026: who can use them, what they make, where the free limits stop">
+<h1>Free AI tools: who can use them, what they make, where they stop</h1>
+<p class="lede">Pick who you are and see which categories fit. Open any row for outputs and typical free-tier limits.</p>
+
+<div class="panel">
+<label class="q" id="aud-l">I am a…</label>
+<div class="chips" id="aud" role="group" aria-labelledby="aud-l"></div>
+<input type="search" id="s" placeholder="Search a tool or category, e.g. Perplexity, video" aria-label="Search tools or categories">
+</div>
+
+<div class="count" id="count" aria-live="polite"></div>
+<div id="list"></div>
+
+<div class="share">
+<a class="btn" id="li" target="_blank" rel="noopener">Share on LinkedIn</a>
+<button class="btn alt" id="cp">Copy link</button>
+<button class="btn alt" id="th">Switch theme</button>
+</div>
+<p class="note">Limits are general patterns, not exact figures. Companies change quotas often, so check each tool’s pricing page before relying on it. Avoid pasting private data into free cloud tools, and verify AI answers.</p>
+</div>
+
+<script>
+var AUD=["Everyone","Student","Farmer or NGO","Developer","Creator","Business"];
+var D=[["Chat and general assistants", "Claude|https://claude.ai;ChatGPT|https://chatgpt.com;Gemini|https://gemini.google.com;Microsoft Copilot|https://copilot.microsoft.com;DeepSeek|https://chat.deepseek.com;Mistral Le Chat|https://chat.mistral.ai;Meta AI|https://www.meta.ai", "Anyone: students, farmers, office workers, business owners, writers.", "Answers, summaries, drafts, translations, plans, code, document and image analysis.", "Daily or rolling message cap, smaller or older model, restricted file uploads and image generation.", ["Everyone", "Student", "Farmer or NGO", "Business", "Developer", "Creator"]], ["Research and learning", "Perplexity|https://www.perplexity.ai;NotebookLM|https://notebooklm.google.com;Elicit|https://elicit.com;Consensus|https://consensus.app;Khanmigo|https://www.khanacademy.org/khan-labs;Duolingo|https://www.duolingo.com", "Students, teachers, researchers, journalists, NGO staff, self-learners.", "Cited answers, paper summaries, study guides, audio overviews, quizzes, language practice.", "Caps on deep searches, limited uploaded sources or notebooks, fewer paper results and exports.", ["Student", "Farmer or NGO"]], ["Writing and editing", "Grammarly|https://www.grammarly.com;QuillBot|https://quillbot.com;LanguageTool|https://languagetool.org;Hemingway Editor|https://hemingwayapp.com", "Students, professionals, bloggers, non-native English writers.", "Corrected grammar, rewritten sentences, readability scores, tone suggestions.", "Advanced rewriting and plagiarism checks are paid; word limits on paraphrasing.", ["Student", "Business", "Creator"]], ["Image generation and design", "Bing Image Creator|https://www.bing.com/images/create;Microsoft Designer|https://designer.microsoft.com;Leonardo.ai|https://leonardo.ai;Ideogram|https://ideogram.ai;Canva|https://www.canva.com;Adobe Firefly|https://firefly.adobe.com;Stable Diffusion|https://github.com/Stability-AI/stablediffusion", "Social media managers, teachers, small businesses, NGOs, designers, hobbyists.", "Illustrations, posters, logos, social posts, mockups, edited photos.", "Daily or monthly credits, lower resolution, watermarks, limits on commercial use. Stable Diffusion has no cap but needs a capable computer.", ["Creator", "Business", "Farmer or NGO"]], ["Video and animation", "CapCut|https://www.capcut.com;Clipchamp|https://clipchamp.com;Pika|https://pika.art;Luma Dream Machine|https://lumalabs.ai/dream-machine;Runway|https://runwayml.com;Descript|https://www.descript.com", "Content creators, educators, marketers.", "Edited videos, auto-captions, short AI clips, transcripts.", "Few generations, short clips, lower resolution, watermarks, slow queues. Editors are more generous than generators.", ["Creator", "Business"]], ["Audio, voice and music", "ElevenLabs|https://elevenlabs.io;Suno|https://suno.com;Udio|https://www.udio.com;Whisper|https://github.com/openai/whisper;Otter.ai|https://otter.ai", "Podcasters, video creators, journalists, students, teams.", "Voiceovers, songs, transcripts, meeting summaries.", "Monthly character or credit quotas, few daily songs, transcription minute limits, often non-commercial use only. Whisper is unlimited but self-run.", ["Creator", "Student", "Business"]], ["Coding and app building", "GitHub Copilot Free|https://github.com/features/copilot;Cursor|https://cursor.com;Windsurf|https://windsurf.com;Codeium|https://codeium.com;Google AI Studio|https://aistudio.google.com;Replit|https://replit.com;Bolt|https://bolt.new;Hugging Face|https://huggingface.co", "Developers, coding students, non-programmers building simple apps.", "Code, bug fixes, explanations, prototypes, open models.", "Monthly request caps, limited top models, restrictions on private projects and hosting, API rate limits.", ["Developer", "Student"]], ["Productivity and automation", "Notion AI|https://www.notion.com/product/ai;Gamma|https://gamma.app;Zapier|https://zapier.com;Make|https://www.make.com;Fireflies|https://fireflies.ai;Fathom|https://fathom.video", "Teams, freelancers, project managers, small organisations.", "Slide decks, organised notes, meeting summaries, automated workflows.", "Monthly task or run caps, limited connected apps, often one-time credits.", ["Business", "Developer"]], ["Data analysis", "Julius AI|https://julius.ai;Google Colab|https://colab.research.google.com;Kaggle|https://www.kaggle.com;Google Sheets|https://sheets.google.com", "Students, analysts, researchers, business owners.", "Charts, statistical summaries, cleaned data, trained models.", "Session length and weekly GPU limits, monthly message and file size caps.", ["Student", "Developer", "Business"]], ["Open-source models (run yourself)", "Ollama|https://ollama.com;LM Studio|https://lmstudio.ai;Llama|https://www.llama.com;Mistral|https://mistral.ai;Qwen|https://qwenlm.ai;Gemma|https://ai.google.dev/gemma", "People with a modern computer who want privacy or offline use.", "Chat, writing, coding help and summarisation on your own machine.", "No usage caps. The limit is your hardware.", ["Developer"]], ["Agriculture and environment", "Plantix|https://plantix.net;PlantNet|https://plantnet.org;iNaturalist|https://www.inaturalist.org;Google Earth Engine|https://earthengine.google.com;NASA POWER|https://power.larc.nasa.gov;Sentinel Hub|https://www.sentinel-hub.com;FAO datasets|https://www.fao.org/faostat", "Farmers, extension workers, agronomists, researchers, conservation groups.", "Crop disease diagnosis, species identification, satellite imagery, climate data, statistics.", "Mobile apps mostly free for individuals; Earth Engine is free for non-commercial use with quotas; caps on area size, downloads or processing.", ["Farmer or NGO", "Student"]]];
+var aud="Everyone",q="";
+var A=document.getElementById("aud"),L=document.getElementById("list"),C=document.getElementById("count");
+function names(x){return x.split(";").map(function(p){return p.split("|")[0]}).join(", ")}
+function links(x){return x.split(";").map(function(p){var a=p.split("|");return '<a href="'+a[1]+'" target="_blank" rel="noopener noreferrer">'+esc(a[0])+'</a>'}).join("")}
+function esc(t){return t.replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function chips(){A.innerHTML="";AUD.forEach(function(a){var b=document.createElement("button");b.className="chip";b.textContent=a;b.setAttribute("aria-pressed",a===aud);b.onclick=function(){aud=a;chips();render()};A.appendChild(b)})}
+function render(){
+ var r=D.filter(function(d){
+  var okA=aud==="Everyone"||d[5].indexOf(aud)>-1;
+  var okQ=!q||(d[0]+" "+names(d[1])+" "+d[3]).toLowerCase().indexOf(q)>-1;
+  return okA&&okQ});
+ C.textContent=r.length+" of "+D.length+" categories";
+ if(!r.length){L.innerHTML='<div class="empty">No match. Clear the search or choose Everyone.</div>';return}
+ L.innerHTML=r.map(function(d,i){return '<div class="item" id="i'+i+'"><button class="head" aria-expanded="false" aria-controls="b'+i+'"><span><span class="name">'+esc(d[0])+'</span><div class="tools">'+esc(names(d[1]))+'</div></span><span class="plus" aria-hidden="true">+</span></button><div class="body" id="b'+i+'"><dl><div><dt>Tools (click to open)</dt><dd class="links">'+links(d[1])+'</dd></div><div><dt>Who can use them</dt><dd>'+esc(d[2])+'</dd></div><div><dt>Typical outputs</dt><dd>'+esc(d[3])+'</dd></div><div class="lim"><dt>Free-tier limits</dt><dd>'+esc(d[4])+'</dd></div></dl></div></div>'}).join("");
+ Array.prototype.forEach.call(L.querySelectorAll(".item"),function(it){var h=it.querySelector(".head");h.onclick=function(){var o=it.classList.toggle("open");h.setAttribute("aria-expanded",o)}})
+}
+document.getElementById("s").oninput=function(e){q=e.target.value.trim().toLowerCase();render()};
+var url=location.href.split("#")[0];
+document.getElementById("li").href="https://www.linkedin.com/sharing/share-offsite/?url="+encodeURIComponent(url);
+document.getElementById("cp").onclick=function(){var b=this;try{navigator.clipboard.writeText(url).then(function(){b.textContent="Link copied"})}catch(e){b.textContent="Copy from the address bar"}};
+document.getElementById("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark")};
+chips();render();
+</script>
+</body>
+</html>
